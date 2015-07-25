@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Alex+Brush|Roboto' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+    <title>Skyscraper Design</title>
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <section id="0" class="window">
+    <div id="colorBG"></div>
+    <div id="blackOut"></div>
+
+    <div class="container-fluid">
+    <div id="iconWrap">
+        <img src="img/arrowUp.png" id="pageUp" class="hvr-pulse">
+        <img src="img/arrowDown.png" id="pageDown" class="hvr-pulse">
+
+        <img src="img/home.png" class="hvr-grow" id="homeNav">
+        <img src="img/about.png" class="hvr-grow" id="aboutNav">
+        <img src="img/projects.png" class="hvr-grow" id="projectsNav">
+        <img src="img/contact.png" class="hvr-grow" id="contactNav">
+    </div>
+
+    <div class="col-xs-2 col-xs-offset-5">
+        <img src="img/skyscraperLogo1.png" id="logo" style="display:none;" onmouseover="blackIn()" onmouseout="blackOut()">
+    </div>
+
+        <div class="row" id="title">
+            <div class="col-xs-12">
+                <h1 id="head1" style="display:none;">SKYSCRAPER</h1>
+                <h2 id="head2" style="display:none;">DESIGN</h2>
+            </div>
+        </div>
+        <div class="row" id="sideNav">
+                <img src="img/fbIcon.png" id="icon1" class="hvr-push"/>
+            </a>
+            <a href="" target="_newtab">
+                <img src="img/twitterIcon.png" id="icon2" class="hvr-push"/>
+            </a>
+            <a href="" target="_newtab">
+                <img src="img/dribbleIcon.png" id="icon3" class="hvr-push"/>
+            </a>
+            <a href="">
+                <img src="img/rssIcon.png" id="icon4" class="hvr-push"/>
+            </a>
+        </div>
+    </div>
+    </section>
+
+    <section id="1" class="window">
+    <div id="parallaxWrap">
+        <img src="img/skyline1.png" id="skyline1" class="parallax-layer">
+        <img src="img/skyline2.png" id="skyline2" class="parallax-layer">
+        <img src="img/skyline3.png" id="skyline3" class="parallax-layer">
+    </div>
+    <div class="container" id="aboutContent">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2">
+                <h2>Web Design from corporate to artistic</h2>
+                <h3>specalizing in customer service and satisfaction</h3>
+            </div>
+        </div>
+        <div class="row" id="aboutDesc">
+            <div class="col-xs-3">
+                <img src="img/design.png">
+                <h4>High quality design strategy tailored to your needs</h4>
+            </div>
+            <div class="col-xs-3">
+                <img src="img/idea.png">
+                <h4>Efficency at its finest, fast design with full functionality</h4>
+            </div>
+            <div class="col-xs-3">
+                <img src="img/social_media.png">                
+                <h4>Consulting that gets you involved day one and beyond</h4>
+            </div>
+            <div class="col-xs-3">
+                <img src="img/responsive-web.png">
+                <h4>Stylized websites focused on dynamic interaction</h4>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="2" class="window">
+        <div id="projectLabel" onmouseover="slideAllOut()" onmouseout="slideAllIn()">
+            <h2>Projects</h2>
+        </div>
+    <div class="container">
+        <div class="row" id="proj1">
+            <div class="col-xs-6 masterCell" id="m1" onmouseover="slideOut('m1')" onmouseout="slideIn('m1')">                
+                <img src="img/corpL.png" class="l">
+                <img src="img/corpR.png" class="r">
+                <div id="corpSlide">
+                    <img src="img/corp1.png">
+                    <img src="img/corp2.png">
+                    <img src="img/corp3.png">
+                </div>
+            </div>
+            <div class="col-xs-6 masterCell" id="m2" onmouseover="slideOut('m2')" onmouseout="slideIn('m2')">
+                <img src="img/artL.png" class="l">
+                <img src="img/artR.png" class="r">
+                <div id="artSlide">
+                    <img src="img/art1.png">
+                    <img src="img/art2.jpg">
+                    <img src="img/art3.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="row" id="proj2">            
+            <div class="col-xs-6 masterCell" id="m3" onmouseover="slideOut('m3')" onmouseout="slideIn('m3')">
+                <img src="img/oneL.png" class="l">
+                <img src="img/oneR.png" class="r">
+                <div id="personalSlide">
+                    <img src="img/personal1.png">
+                    <img src="img/personal2.png">
+                    <img src="img/personal3.png">
+                </div>
+            </div>
+            <div class="col-xs-6 masterCell" id="m4" onmouseover="slideOut('m4')" onmouseout="slideIn('m4')">
+                <img src="img/testL.png" class="l">
+                <img src="img/testR.png" class="r">
+                <div id="exSlide">
+                    <img src="img/ex1.jpg">
+                    <img src="img/ex2.jpg">
+                    <img src="img/ex3.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="3" class="window">
+        <div id="gmap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2823.8202860727797!2d-93.0965059!3d44.94732120000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f7d54d3def56d3%3A0xc60e940cf8f8a3e2!2s5+W+7th+Pl%2C+St+Paul%2C+MN+55102!5e0!3m2!1sen!2sus!4v1428813199990" frameborder="0" style="border:0"></iframe>
+        </div>
+    <div class="container">
+        <div class="row" id="contactHeader">
+            <div class="col-xs-12">
+                <h1>Send Us A Message</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div id="card">
+                <div class="front col-xs-8 col-xs-offset-2">
+                    <form class="col-xs-12 form-horizontal">
+                        <div class="form-group">
+                            <div class="col-xs-6">
+                                <i class="fa fa-user"></i>
+                                <input type="text" class="form-control" placeholder="Your Name" id="name">
+                            </div>
+                            <div class="col-xs-6">
+                                <i class="fa fa-envelope"></i>
+                                <input type="email" class="form-control" placeholder="Your email">
+                            </div>
+                            <div class="col-xs-12">
+                                <i class="fa fa-pencil"></i>
+                                <textarea class="form-control" rows="6" style="resize:none" placeholder="Your Message"></textarea>
+                            </div>
+                            <button id="flipIt" type="button" class="btn btn-primary btn-block"><i class="fa fa-send-o"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="back col-xs-8 col-xs-offset-2">
+                    <div id="typingText"><h3 id="tyMsg"> </h3></div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="contactSide">
+                <p><i class="fa fa-envelope"></i>info@skyscraperdesign.com</p>
+                <p><i class="fa fa-phone"></i>651.294.3049</p>
+                <p><i class="fa fa-map-marker"></i>5 W 7th Pl, St Paul, MN 55102</p>
+        </div>
+    </div>
+    </section>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript">var $j = jQuery.noConflict();</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.2.0/prototype.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js"></script>
+    <script src="js/jquery.parallax.min.js"></script>
+    <script src="js/jqFancyTransitions.1.8.min.js" type="text/javascript"></script>
+    <script src="js/jquery.flip.js"></script>
+    <script src="js/typingText.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
